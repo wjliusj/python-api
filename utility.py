@@ -23,3 +23,8 @@ def file_read_lines(file):
         return lines
     else:
         raise ValueError("The file {} is not exist!!!".format(file))
+
+
+def remove_blanks_characters(lines):
+    lines = [x.strip() for x in lines if x.strip() != ""]
+    return lines
